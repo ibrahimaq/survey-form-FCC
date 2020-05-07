@@ -1,0 +1,113 @@
+
+
+<!doctype html>
+<html>
+  
+  <head>
+   <link rel="stylesheet" href="stylesheet.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+<body>
+<!-- wrapper  -->
+   <div class="container">
+     <header>
+      <h1 id="title">My Webpage's Survey Form</h1>
+      <p id = "description">Thank you for taking the time to improve my webpage</p>
+     </header>
+    <!-- h1 and p-description ends here here-->
+
+    <!-- form starts here     -->
+    <form id="survey-form" action="https://www.freecodecamp.com/email-submit">
+      <div class = "group">
+        <label id="name-label" for="name" >Name</label>
+        <input id ="name" class="inputcontrol" name = "name"  type = "text"  placeholder="Enter your name" required>
+      </div>
+      
+      <div class = "group">
+      <label id="email-label" for="email" >Email</label>
+        <input id ="email" class="inputcontrol" type = "email" name = "email" placeholder="Enter your Email" required>
+      </div>
+      
+      <div class = "group">
+      <label id="number-label" for="number" >Age <span class="hint"> (optional)</span></label>
+        <input id ="number" class="inputcontrol" type = "number" name = "age" min="10" max="120" placeholder="Enter your age">
+      </div>
+      
+      
+      
+      <div class = "group" >
+         <p >Which option best describes your current role?</p>
+         
+        <select name="role" id="dropdown" class="inputcontrol" >
+          
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="fulltime">Full Time Employment</option>
+            <option value="parttime">Part Time</option>
+            <option value="selfemployed">Self-Employed</option>
+            <option value="unemployed"> Unemployed</option>
+            <option value="other">Other</option>
+            <option value = "preferno">Prefer not to say</option>
+         
+         </select>
+         
+      </div>
+      
+      <div class="group">
+        
+        <p>What design element do you like the most? <span class="hint"> (Select all that apply)</span> </p>
+        
+        <label>
+          <input class = "inputcheck" type="checkbox" name="fav-elem" value="background"> Background 
+        </label>
+        <label>
+          <input class = "inputcheck" type="checkbox" name="fav-elem" value="color"> Colours 
+        </label>
+                                                                             
+        <label>
+          <input class = "inputcheck" type="checkbox" name="fav-elem" value="font"> Text and fonts 
+        </label>
+        <label>
+          <input class = "inputcheck" type="checkbox" name="fav-elem" value="border"> Borders
+        </label>
+        <label>
+          <input class = "inputcheck" type="checkbox" name="fav-elem" value="spacing"> Spacing 
+        </label>
+        
+      </div>
+      
+      <div class="group">
+        <p> Overall, how satsfied are you with the design? </p>
+        
+        <label>
+          <input class="inputradio" name="improvement" type="radio" value="extremelydiss"> Extremely dissatisfied
+        </label>
+        <label>
+          <input class="inputradio" name="improvement" type="radio" value="dissatisfied"> Dissatisfied
+        </label>
+        <label>
+          <input class="inputradio" name="improvement" type="radio" value="satisfied"> Satisfied
+        </label>
+        <label>
+          <input class="inputradio" name="improvement" type="radio" value="extremelydiss"> Extremely satsfied
+        </label>
+                
+      </div>
+      
+      <div class = "group">
+       <p>Any comments or suggestions?</p> 
+       <textarea id= "comment" class = "input-textarea" name="comments" placeholder="Enter your comments here..." ></textarea>
+      </div>
+      
+
+      <div class = "group"> 
+        <button id="submit" type="submit" name="submit">Submit</button>
+      </div>
+      
+     </form>
+    </div>
+  
+</body> 
+ 
+</html>
